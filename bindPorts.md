@@ -136,3 +136,47 @@ fb43c91b28c0   redis:4.0     "docker-entrypoint.s…"   16 minutes ago   Exited 
 
 C:\Users\BBEES>
 }
+
+{
+
+Microsoft Windows [version 10.0.22621.2283]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\BBEES>docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS                      PORTS                    NAMES
+9e7e67b55f0e   redis         "docker-entrypoint.s…"   3 minutes ago    Up 3 minutes                0.0.0.0:6000->6379/tcp   friendly_darwin
+c492daa1be2e   redis         "docker-entrypoint.s…"   5 minutes ago    Exited (0) 4 minutes ago                             serene_banzai
+b81f350df10a   redis         "docker-entrypoint.s…"   7 minutes ago    Exited (0) 4 minutes ago                             stupefied_boyd
+fb43c91b28c0   redis:4.0     "docker-entrypoint.s…"   19 minutes ago   Exited (0) 13 minutes ago                            beautiful_hoover
+3e0282400da7   redis         "docker-entrypoint.s…"   24 minutes ago   Exited (0) 12 minutes ago                            sweet_sanderson
+3eb0b1efc222   hello-world   "/hello"                 34 minutes ago   Exited (0) 34 minutes ago                            cool_brown
+
+C:\Users\BBEES>docker run -p6001:6379 redis:4.0
+1:C 29 Sep 16:39:35.379 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 29 Sep 16:39:35.380 # Redis version=4.0.14, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 29 Sep 16:39:35.380 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+1:M 29 Sep 16:39:35.381 * Running mode=standalone, port=6379.
+1:M 29 Sep 16:39:35.381 # Server initialized
+1:M 29 Sep 16:39:35.381 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 29 Sep 16:39:35.381 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 29 Sep 16:39:35.381 * Ready to accept connections
+
+}
+
+[
+
+Microsoft Windows [version 10.0.22621.2283]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\BBEES>docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS                      PORTS                    NAMES
+d78385bcc522   redis:4.0     "docker-entrypoint.s…"   17 seconds ago   Up 15 seconds               0.0.0.0:6001->6379/tcp   magical_pare
+9e7e67b55f0e   redis         "docker-entrypoint.s…"   5 minutes ago    Up 5 minutes                0.0.0.0:6000->6379/tcp   friendly_darwin
+c492daa1be2e   redis         "docker-entrypoint.s…"   6 minutes ago    Exited (0) 6 minutes ago                             serene_banzai
+b81f350df10a   redis         "docker-entrypoint.s…"   8 minutes ago    Exited (0) 6 minutes ago                             stupefied_boyd
+fb43c91b28c0   redis:4.0     "docker-entrypoint.s…"   20 minutes ago   Exited (0) 15 minutes ago                            beautiful_hoover
+3e0282400da7   redis         "docker-entrypoint.s…"   26 minutes ago   Exited (0) 14 minutes ago                            sweet_sanderson
+3eb0b1efc222   hello-world   "/hello"                 36 minutes ago   Exited (0) 36 minutes ago                            cool_brown
+
+C:\Users\BBEES>
+]
