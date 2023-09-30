@@ -4,7 +4,7 @@ function sayHello(name){
     console.log('Hello ' + name);
 }
 
-sayHello('Mosh');
+/* sayHello('Mosh');
 console.log(module);
-log('message');
+log('message'); */
 //logger =1; // Type Error: Assignment to constant variable. use jshint
