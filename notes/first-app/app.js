@@ -1,5 +1,4 @@
-var logger = require('./logger');
-console.log(logger);
+const log = require('./logger');
 
 function sayHello(name){
     console.log('Hello ' + name);
@@ -7,4 +6,5 @@ function sayHello(name){
 
 sayHello('Mosh');
 console.log(module);
-logger.log('message');
+log('message');
+//logger =1; // Type Error: Assignment to constant variable. use jshint

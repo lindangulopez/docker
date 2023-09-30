@@ -8,5 +8,5 @@ function log(message){
     console.log(message);
 }
 
-module.exports.log =log;
+module.exports =log; // export single method don't need the ojbect
 module.exports.endpoint =url;
