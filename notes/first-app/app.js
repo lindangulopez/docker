@@ -1,10 +1,5 @@
-const log = require('./logger');
+const path =require('path');
 
-function sayHello(name){
-    console.log('Hello ' + name);
-}
+var pathObj =path.parse(__filename);
 
-/* sayHello('Mosh');
-console.log(module);
-log('message'); */
-//logger =1; // Type Error: Assignment to constant variable. use jshint
+console.log(pathObj);
